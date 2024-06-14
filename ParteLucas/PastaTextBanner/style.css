@@ -18,7 +18,7 @@ body {
 
 header {
     width: 100%;
-    padding: 10px 20px;
+    padding: 4vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +35,8 @@ header {
 }
 
 .logo {
-    height: 80px;
+    width: 90px;
+    height: 90px;
 }
 
 
@@ -47,43 +48,68 @@ header {
     text-align: center;
     background-color: var(--white--if);
     padding: 2px; /* Adiciona um padding para dar um espaçamento interno */
+    margin-top: -10vh;
 }
 
 .container h1{
-    font-size: 90px;
+    font-size: 86px;
+    color: #0E194D;
 }
 
 
-.container span{
+.container .descer{
+    font-size: 86px;
     color:#008000;
+    margin-right: 36vh;
+    margin-top: -2vh;
 }
 
-.container .banners{
-    width: 45%  ;
+form {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
 }
 
-.container .banners > h2{
-    text-align: justify;
-    font-weight: 100;
-    font-size: 30px;
+form input {
+    width: 50vh;
+    padding: 1vh;
 }
 
-.container .banners >  .banner{
-    border: 2px solid rgb(167, 162, 162);
-    text-align: justify;
-    padding: 2vh;
-    margin-top: 2%;
+form label{
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 
-.container,.banners, .banner > h2{
-    margin-top: 1%;
-    font-weight: 100;
+form textarea{
+    padding: 3vh;
+    width: 50vh;
 }
 
-
-.icons {
-    font-size: 7vh;
-    margin-left: 109vh;
-    margin-top: -20vh;
-    cursor: pointer;
+form select{
+    padding: 1vh;
+    width: 50vh;
 }
+
+.hidden-upload {
+    display: none;
+}
+
+.custom-upload {
+  border: 1px solid black;
+  padding: 1vh;
+  border-radius: 1vh;
+}
+
+form button{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: white;
+    background-color:#008000 ;
+    font-weight: bold;
+    border: none;
+    border-radius: 2vh;
+    width: 40%;
+    padding: 1vh;   
+}
+
