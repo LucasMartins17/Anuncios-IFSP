@@ -84,3 +84,7 @@ header h1 {
     width: 24px;
     height: 24px;
 }
+
+main{
+    display: flex;
+}
