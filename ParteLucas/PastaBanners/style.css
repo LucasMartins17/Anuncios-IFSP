@@ -81,3 +81,9 @@ header {
 }
 
 
+.icons {
+    font-size: 7vh;
+    margin-left: 109vh;
+    margin-top: -20vh;
+    cursor: pointer;
+}

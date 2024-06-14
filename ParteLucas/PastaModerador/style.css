@@ -103,6 +103,14 @@ header {
     height: 98%;
 }
 
+.icons {
+    font-size: 7vh;
+    margin-left: 109vh;
+    margin-top: -20vh;
+    cursor: pointer;
+}
+
+
 .container .anuncios{
     border: 2px solid gray;
     background-color: greenyellow;
@@ -129,3 +137,4 @@ header {
     align-items: center;
     margin-bottom: 5vh;
 }
+
