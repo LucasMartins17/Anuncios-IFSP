@@ -38,7 +38,7 @@ CREATE TABLE usuario (
 -- Criação da tabela Form
 CREATE TABLE Form (
     Id INT AUTO_INCREMENT PRIMARY KEY,
-    Titulo VARCHAR(255) NOT NULL UNIQUE,
+    Titulo VARCHAR(255) NOT NULL,
     Descricao VARCHAR(255) NOT NULL,
     DataInicio DATETIME NOT NULL,
     HrIni DATETIME NOT NULL,
@@ -54,8 +54,7 @@ CREATE TABLE Artes (
     Titulo VARCHAR(255),
     caminhoImg VARCHAR(255),
     PRIMARY KEY (Id),
-    FOREIGN KEY (Id) REFERENCES Form(Id),
-    FOREIGN KEY (Titulo) REFERENCES Form(Titulo)
+    FOREIGN KEY (Id) REFERENCES Form(Id)
 );
 
 
