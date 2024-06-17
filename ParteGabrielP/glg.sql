@@ -24,7 +24,7 @@ CREATE TABLE Form (
 CREATE TABLE Artes (
     Id INT,
     Titulo VARCHAR(255),
-    Img BLOB,
+    caminhoImg VARCHAR(255),
     PRIMARY KEY (Id),
     FOREIGN KEY (Id) REFERENCES Form(Id),
     FOREIGN KEY (Titulo) REFERENCES Form(Titulo)
