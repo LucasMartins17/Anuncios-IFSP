@@ -1,17 +1,8 @@
-/*Index*/
-.highlight {
-    color: #4CAF50;
-}
-
-
-header h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
 .ad-section {
