@@ -30,3 +30,46 @@ CREATE TABLE usuario (
     dataInscricao VARCHAR(255) NOT NULL,
     FOREIGN KEY (Id_func) REFERENCES funcao(Id)
 );
+
+
+
+----------------------------------- Parte do Grupo dos Anuncios -----------------------------------
+
+-- Criação da tabela Form
+CREATE TABLE Form (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Titulo VARCHAR(255) NOT NULL,
+    Descricao VARCHAR(255) NOT NULL,
+    DtInicio DATETIME NOT NULL,
+    DtFinal DATETIME NOT NULL,
+    HrIni DATETIME NOT NULL,
+    HrFinal DATETIME NOT NULL,
+    Tipo VARCHAR(255) NOT NULL,
+    pubAlv VARCHAR(255) NOT NULL
+);
+
+-- Criação da tabela Artes
+CREATE TABLE Artes (
+    Id_artes INT,
+    Titulo VARCHAR(255),
+    caminhoImg VARCHAR(255),
+    PRIMARY KEY (Id_artes),
+    FOREIGN KEY (Id_artes) REFERENCES Form(Id)
+);
+
+
+----------------------------------- Fim da parte do Grupo dos Anuncios -----------------------------------
+
+----------------------------------- Parte do Grupo dos Armarios -----------------------------------
+
+-- Criação da tabela Form
+CREATE TABLE Armario (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Estado Boolean NOT NULL,
+    Id_usuario INT NOT NULL,
+    Nome VARCHAR (255) NOT NULL,
+    Dt_Emprestimo DATETIME NOT NULL,
+    FOREIGN KEY (Id_usuario) REFERENCES usuario(Id)
+);
+
+----------------------------------- Fim da parte do Grupo dos Armarios -----------------------------------
