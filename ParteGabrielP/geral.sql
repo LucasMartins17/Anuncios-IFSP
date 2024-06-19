@@ -17,20 +17,41 @@ CREATE TABLE funcao (
     perm_Adm_Geral Boolean NOT NULL
 );
 
+------------------------------ Inputs das Funções ------------------------------
+
+INSERT INTO funcao (nomeFunc, perm_Adm_FB, perm_Adm_An, perm_Adm_Ar, perm_Adm_Geral)
+VALUES ('Adm FeedBack', TRUE, FALSE, FALSE, FALSE);
+
+INSERT INTO funcao (nomeFunc, perm_Adm_FB, perm_Adm_An, perm_Adm_Ar, perm_Adm_Geral)
+VALUES ('Adm Anuncio', FALSE, TRUE, FALSE, FALSE);
+
+INSERT INTO funcao (nomeFunc, perm_Adm_FB, perm_Adm_An, perm_Adm_Ar, perm_Adm_Geral)
+VALUES ('Adm Armario', FALSE, FALSE, TRUE, FALSE);
+
+INSERT INTO funcao (nomeFunc, perm_Adm_FB, perm_Adm_An, perm_Adm_Ar, perm_Adm_Geral)
+VALUES ('Adm Geral', TRUE, TRUE, TRUE, TRUE);
+
+--------------------------------------------------------------------------------
+
+
 -- Criação da tabela usuario
 CREATE TABLE usuario (
     Id INT AUTO_INCREMENT PRIMARY KEY,
     id_func INT NOT NULL,
-    CPF INT NOT NULL,
+    CPF char(11) NOT NULL,
     nome VARCHAR(255) NOT NULL UNIQUE,
-    email DATETIME NOT NULL,
-    senha DATETIME NOT NULL,
-    prontuario DATETIME NOT NULL,
-    funcao DATETIME NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    prontuario VARCHAR(255) NOT NULL,
+    funcao VARCHAR(255) NOT NULL,
     dataInscricao VARCHAR(255) NOT NULL,
     FOREIGN KEY (Id_func) REFERENCES funcao(Id)
 );
 
+------------------------------ Inputs do Adm Geral ------------------------------
+
+INSERT INTO usuario (id_func, CPF, nome, email, senha, prontuario, funcao, dataInscricao)
+VALUES (4, '00000000000', 'User 0', 'userEmail@gmail.com', '12345678', '0000000', 'Adm Geral', now());
 
 
 ----------------------------------- Parte do Grupo dos Anuncios -----------------------------------
