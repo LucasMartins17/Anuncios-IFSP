@@ -83,9 +83,10 @@ main{
     display: flex;
     align-items:center;
     align-content: center;
-    margin-left: 10%;
+    margin-left: 17%;
     margin-bottom: 5%;
     border-radius: 8px;
+    width: 70%;
 }
 
 
