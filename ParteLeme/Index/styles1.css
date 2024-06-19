@@ -29,17 +29,42 @@ header {
 header h1{
     font-size: 64px;
 }
-.ad-section {
-    background-color: #9adf6c;
-    width: 700px;
-    height: 400px;
+.anucnio {
+    border: 1px solid rgb(223, 220, 220);
+    background-color: #04f50c;
+    margin-left: 4%;
+    width: 900px;
+    height: 500px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ad-section  p{
+.anucnio > p{
     color: white;
+    font-weight: bold;
+}
+
+.anucnio-btn     {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #4CAF50;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    width: 500px;
+    height: 50px;
+    margin-left: 3.5%;
+}
+
+.anucnio-btn > img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 main a{
@@ -48,63 +73,34 @@ main a{
 
 main{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button{
-    border: 2px solid #A4A79D;
-    font-size: 45px; 
-    padding-left: 5px;
+    border: 2px solid #95ca1a;
+    font-size: 45px;    
     display: flex;
     align-items:center;
     align-content: center;
-    margin: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border-radius: 8px;
+}
 
+
+.button > img {
+    width: 7%;
+    margin-left: 3vh
 }
 
 .button a{
     text-decoration: none;
     color: black;
     font-weight: bold;
-}
-.icon{
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.buttons{
-    display: flex;
-    flex-direction: column;
-   
+    padding: 3vh
 }
 
 
-.footer {
-    margin-top: 20px;
-}
 
-.ad-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #f3f3f3;
-    text-decoration: none;
-    color: #f44336;
-    font-weight: bold;
-    width: 500px;
-    height: 50px;
-    margin-left: 10%;
-}
 
-.ad-button img {
-    margin-right: 10px;
-    width: 24px;
-    height: 24px;
-}
